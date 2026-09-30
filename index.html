@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>( 𝒍𝒂𝒘𝒉𝒂 ) لوحة | إطارات مخصصة</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+	<header class="navbar">
+		<div class="container">
+			<h1 class="logo"><span class="logo-bracket">(</span> <span class="logo-text">𝒍𝒂𝒘𝒉𝒂</span> <span class="logo-bracket">)</span></h1>
+			<nav>
+				<a href="#categories">الفئات</a>
+				<a href="#products">المنتجات</a>
+				<a href="https://www.instagram.com/la_wha" target="_blank" rel="noopener noreferrer" class="btn-nav">تواصل معنا</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="hero-content">
+				<h2>راك حاب تزين شومبرا تاعك و تعطيها طابع Spécial!</h2>
+				<p>أجمل الإطارات المخصصة (Cadres Personnalisés) بجودة عالية وأسعار تنافسية تناسبك.</p>
+				<a href="#categories" class="btn-main">اكتشف التصنيفات <i class="fas fa-arrow-down" aria-hidden="true"></i></a>
+			</div>
+		</section>
+
+		<section id="categories" class="categories-section container">
+			<h2>تصنيفات اللوحات</h2>
+			<div class="categories-grid">
+				<button type="button" class="category-item active" onclick="filterCategory('all', this)">
+					<span class="circle-img"><img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=300" alt=""></span><span>الكل</span>
+				</button>
+				<button type="button" class="category-item" onclick="filterCategory('cars', this)">
+					<span class="circle-img"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=300" alt=""></span><span>سيارات</span>
+				</button>
+				<button type="button" class="category-item" onclick="filterCategory('football', this)">
+					<span class="circle-img"><img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=300" alt=""></span><span>كرة قدم</span>
+				</button>
+				<button type="button" class="category-item" onclick="filterCategory('cities', this)">
+					<span class="circle-img"><img src="https://images.unsplash.com/photo-1477959858617-67f30bc75b82?w=300" alt=""></span><span>مدن</span>
+				</button>
+			</div>
+		</section>
+
+		<section id="products" class="products-section container">
+			<h2 id="section-title">كل المنتجات</h2>
+			<div class="products-grid" id="products-container">
+				<article class="product-card" data-category="cars">
+					<div class="product-img"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=500" alt="إطار سيارات"><span class="badge">جديد</span></div>
+					<div class="product-details"><h3>Cadre Car Sport</h3><p class="dimensions">المقاس: 27 × 29.5 سم (A4)</p><p class="price">900 دج</p><button type="button" class="btn-whatsapp" onclick="orderWhatsApp('Cadre Car Sport', '900 دج')"><i class="fab fa-whatsapp" aria-hidden="true"></i> اطلب عبر الواتساب</button></div>
+				</article>
+				<article class="product-card" data-category="football">
+					<div class="product-img"><img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=500" alt="إطار كرة قدم"></div>
+					<div class="product-details"><h3>Cadre Football Legend</h3><p class="dimensions">المقاس: 27 × 29.5 سم (A4)</p><p class="price">900 دج</p><button type="button" class="btn-whatsapp" onclick="orderWhatsApp('Cadre Football Legend', '900 دج')"><i class="fab fa-whatsapp" aria-hidden="true"></i> اطلب عبر الواتساب</button></div>
+				</article>
+				<article class="product-card" data-category="cities">
+					<div class="product-img"><img src="https://images.unsplash.com/photo-1477959858617-67f30bc75b82?w=500" alt="إطار مدن"><span class="badge">طلب قياسي</span></div>
+					<div class="product-details"><h3>Cadre City Vibes</h3><p class="dimensions">المقاس: 27 × 29.5 سم (A4)</p><p class="price">900 دج</p><button type="button" class="btn-whatsapp" onclick="orderWhatsApp('Cadre City Vibes', '900 دج')"><i class="fab fa-whatsapp" aria-hidden="true"></i> اطلب عبر الواتساب</button></div>
+				</article>
+				<article class="product-card" data-category="cars">
+					<div class="product-img"><img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=500" alt="إطار سيارات كلاسيكية"></div>
+					<div class="product-details"><h3>Cadre Classic Car</h3><p class="dimensions">المقاس: 27 × 29.5 سم (A4)</p><p class="price">900 دج</p><button type="button" class="btn-whatsapp" onclick="orderWhatsApp('Cadre Classic Car', '900 دج')"><i class="fab fa-whatsapp" aria-hidden="true"></i> اطلب عبر الواتساب</button></div>
+				</article>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			<p>&copy; 2026 <strong>( 𝒍𝒂𝒘𝒉𝒂 )</strong>. جميع الحقوق محفوظة.</p>
+			<div class="social-icons">
+				<a href="https://www.instagram.com/la_wha" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.tiktok.com/@la_wha5?_r=1&amp;_t=ZS-9AAaf4Cnt9o" target="_blank" rel="noopener noreferrer" title="TikTok" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+			</div>
+		</div>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>

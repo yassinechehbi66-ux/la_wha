@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>( 𝒍𝒂𝒘𝒉𝒂 ) لوحة الإدارة - Admin Dashboard</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="admin-body">
+	<header class="navbar">
+		<div class="container">
+			<h1 class="logo">لوحة التحكم <span>Admin</span></h1>
+			<nav>
+				<a href="index.html" class="btn-nav"><i class="fas fa-home"></i> العودة للموقع</a>
+			</nav>
+		</div>
+	</header>
+
+	<main class="container admin-container">
+		<h2>إضافة منتج جديد</h2>
+		<form id="add-product-form" onsubmit="addProduct(event)">
+			<div class="form-group">
+				<label for="p-name">اسم المنتج:</label>
+				<input type="text" id="p-name" required placeholder="مثال: Cadre Anime">
+			</div>
+			<div class="form-group">
+				<label for="p-cat">التصنيف:</label>
+				<select id="p-cat">
+					<option value="cars">سيارات (Cars)</option>
+					<option value="football">كرة قدم (Football)</option>
+					<option value="cities">مدن (Cities)</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="p-price">السعر (بالدينار):</label>
+				<input type="text" id="p-price" required placeholder="900 دج">
+			</div>
+			<div class="form-group">
+				<label for="p-img">رابط الصورة:</label>
+				<input type="url" id="p-img" required placeholder="https://...">
+			</div>
+			<button type="submit" class="btn-main">حفظ وإضافة المنتج</button>
+		</form>
+
+		<hr style="margin: 40px 0; border: 0; border-top: 1px solid #ddd;">
+
+		<h2>المنتجات الحالية</h2>
+		<div id="admin-products-list" class="admin-list" aria-live="polite">
+			<!-- سيتم تحميل المنتجات هنا برمجياً -->
+		</div>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>
